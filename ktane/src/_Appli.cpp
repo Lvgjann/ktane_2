@@ -1,5 +1,142 @@
 #include "_Appli.h"
 
+#include <stdio.h>
+#include <cstring>
+#include "modules.h"
+#include "needy.h"
+
+
+//Module 1 : Wires
+void display_instructions_module1()
+{
+    std::cout << "On the subject of Wires" << std::endl << std::endl
+              << " * A wire module can have 3-6 wires on it." << endl
+              << " * Only the one correct wire needs to be cut to disarm the module." << endl
+              << " * Wire ordering begins with the first on the top." << endl;
+}
+
+//Module 2 : Buttons
+void display_instructions_module2_0()
+{
+    cout << "On the subject of the Button" << endl << endl
+         << "Follow these rules in the order they are listed. Perform the first action that applies : " << endl;
+}
+
+void display_instructions_module2_1()
+{
+    cout << "If you start holding tthe button down, a olored strip will light  up on the right side of the module."
+            "Based on its color you must release the button at a specifid point in time : " << endl;
+}
+
+//Module 3 : Keypads
+void display_instructions_module3()
+{
+    cout << "On the subject of Keypads" << endl << endl
+         << " * Only one column below has all four of the symbols from the keypad." << endl
+         << " * Press the four buttons in the order their symbols appear from the top to bottom within that column." << endl;
+}
+
+//Module 4 : Simon
+void display_instructions_module4()
+{
+    cout << "On the subject of Simon Says" << endl << endl
+         << " 1. One of the four colored buttons will flash." << endl
+         << " 2. Using the correct table below, press the button with the corresponding color" << endl
+         << " 3. The original button will flash, followed by another. Repeat this sequence in order using the color mapping." << endl
+         << " 4. The sequence will legthen by one each time you correctly enter a sequence until the module is disarmed." << endl;
+}
+
+//Module 5 : Who's on First
+void display_instructions_module5()
+{
+    cout << "On the subject of Who's on First" << endl << endl
+         << " 1. Read the display and use step 1 to determine which button label to read." << endl
+         << " 2. Using this button label, use step 2 determine which button to push." << endl
+         << " 3. Repeat until the module has been disarmed." << endl << endl
+         << " Step 1 : Based on the display, read the label of a particular button and proceed to step 2" << endl
+         << " Step 2 : Using the label from step 1, push the first button that appears in its corrsponding list." << endl;
+}
+
+//Module 6 : Memory
+void display_instructions_module6()
+{
+    cout << "On the subject of Memory" << endl << endl
+         << " * Press the correct button to progress the module to the next stage. Complete all stages to disarm the module." << endl
+         << " * Pressing an incorrect button will reset the module back to stage 1." << endl
+         << " * Button positions are ordered from left to right." << endl;
+}
+
+//Module 7 : Morse Code
+void display_instructions_module7()
+{
+    cout << "On the subject of Morse Code" << endl << endl
+         << " * Interpret the signal from the flashing light using the Morse Code chart to spell one of the words in the table." << endl
+         << " * The signal will loop, with a long gap between repetitions." << endl
+         << " * Once the word is identified, set the corresponding frequency and press the transmit (TX) button" << endl;
+}
+
+//Module 8 : Complicated wires
+void display_instructions_module8()
+{
+    cout << "On the subject of Complicated wires" << endl << endl
+         << " * Look at each wire : there is an LED above the wire and a space for a star symbol below the wire." << endl
+         << " * For each wire/LED/symbol combination, use the Venn diagram below to decide whether or not to cut the wire." << endl
+         << " * Each wire may be stripped with multiple colors." << endl;
+}
+
+//Module 9 : Wire Sequences
+void display_instructions_module9()
+{
+    cout << "On the subject of Wires Sequences" << endl << endl
+         << " * Within this module there are several panels with wires on them, but only one panel is visible at a time."
+         << " Switch to the next panel by using the down button and the previous panel by using the up button." << endl
+         << " * Do not switch to the next panel until you are sure that you have cut all necessary wires on the current panel." << endl
+         << " * Cut the wires as directed by the following table. Wire occurrences are cumulative over all panels within the module." << endl;
+}
+
+//Module 10 : Mazes
+void display_instructions_module10()
+{
+    cout << "On the subject of Mazes" << endl << endl
+         << " * Find the maze with matching circular markings." << endl
+         << " * The defuser must navigate the white light to the red triangle using the arrow buttons." << endl
+         << " * Warning: Do not cross the lines shown in the maze. These lines are invisible on the bomb" << endl;
+}
+
+//module 11 : Passwords
+void display_instructions_module11()
+{
+    cout << "On the subject of Passwords" << endl << endl
+         << " * The buttons above and below each letter will cycle through the possibilities for that position." << endl
+         << " * Only one combination of the available letters will match a password below." << endl
+         << " * Press the submit button once the correct word has been set." << endl;
+}
+
+//Needy module 1 : Venting gas
+void display_instructions_needy1()
+{
+    cout << "On the subject of venting Gas" << endl << endl
+         << R"( * Respond to the computer prompts by pressung "Y" for "YES" or "N" for "NO".)" << endl;
+}
+
+//Needy module 2 : Capacitor discharge
+void display_instructions_needy2()
+{
+    cout << "On the subject of Capacitor Discharge" << endl << endl
+         << "Discharge the capacitor before it overloads by holding down the lever." << endl;
+}
+
+//Needy module 3 : Knobs
+void display_instructions_needy3()
+{
+    cout << "On the subject of knobs" << endl << endl
+         << " * The know can be turned to one of four different positions." << endl
+         << " * The knob must be in the correct position when this module's timer hits zero." << endl
+         << " * The correct position can be determined by the on/off configuration of the twelve LEDs." << endl
+         << " * Knob positions are relative to the \"UP\" label, which may be rotated" << endl;
+}
+
+
 void display_modules()
 {
     clear();
@@ -27,8 +164,6 @@ int appli()
     int module;
 
     bool quit = false;
-
-    SDL_Init(SDL_INIT_EVERYTHING);
 
     while (!quit)
     {
@@ -84,3 +219,77 @@ int appli()
     }
     return 0;
 }
+
+
+void clear()
+{
+    cout << "\033[02J\033[1;1H";
+}
+
+void menu()
+{
+    cout << "Press any key to continue." << endl;
+    cin.ignore();
+    cin.get();
+}
+
+void display_vector(vector<string> tab)
+{
+    cout << "/==============================/" << endl;
+    for (const auto &i : tab)
+        cout << i << " " << endl;
+    cout << endl;
+}
+
+bool find_word(vector<string> tab, string word)
+{
+    bool found =  false;
+    for (const auto &i : tab) {
+        if (i == word)
+            found = true;
+    }
+    return found;
+}
+
+void find_dictionnary(vector<vector<string> > tab, string dic)
+{
+    bool found = false;
+    unsigned int i = 0;
+    while (!found && i < tab.size())
+    {
+        if (tab[i][0]== dic)
+        {
+            found = true;
+            display_vector(tab[i]);
+        }
+void split(string s, int l, vector<string> &entries)
+{
+    const char *c = s.c_str();
+    char buffer[l];
+    entries.reserve(0);
+
+    int d = 0;
+    for(unsigned int i = 0; i < s.length() - 1;)
+    {
+        if(d != l)
+        {
+            buffer[d] = c[i];
+            d++;
+            i++;
+        }
+        else
+        {
+            entries.push_back(buffer, l);
+
+            //Clear array
+            memset(buffer, 0, l);
+            d = 0;
+        }
+    }
+}
+        else
+            i++;
+    }
+}
+
+

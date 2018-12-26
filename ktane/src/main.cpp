@@ -1,7 +1,6 @@
 #include "_Appli.h"
+#include "_Appli.cpp"
 
-#include "_Headers.h"
-#include "_Outils.h"
 
 int main()
 {
