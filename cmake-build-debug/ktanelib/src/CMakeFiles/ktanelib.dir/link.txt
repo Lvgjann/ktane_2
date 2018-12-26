@@ -1,0 +1,2 @@
+/usr/bin/ar qc libktanelib.a  CMakeFiles/ktanelib.dir/test.cpp.o
+/usr/bin/ranlib libktanelib.a

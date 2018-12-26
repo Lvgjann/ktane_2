@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12.1)
+include_directories(${PROJECT_SOURCE_DIR}/ktane/inc)
+include_directories(${PROJECT_SOURCE_DIR}/ktanelib/inc)
+link_directories(${MyProject_SOURCE_DIR}/ktanelib/src)
+add_executable(ktane main.cpp)
+target_link_libraries(ktane ktanelib)

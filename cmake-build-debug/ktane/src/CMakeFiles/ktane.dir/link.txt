@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ktane.dir/main.cpp.o  -o ktane  -L/ktanelib/src -Wl,-rpath,/ktanelib/src ../../ktanelib/src/libktanelib.a 

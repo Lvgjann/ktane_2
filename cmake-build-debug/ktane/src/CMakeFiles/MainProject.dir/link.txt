@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/MainProject.dir/main.o  -o MainProject  -L/ktanelib/src -Wl,-rpath,/ktanelib/src -lLibProject 
