@@ -43,10 +43,10 @@ RM = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dewitt/Documents/Perso/ktane2
+CMAKE_SOURCE_DIR = /home/dewitt/Documents/Perso/ktane_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include ktane/src/CMakeFiles/ktane.dir/depend.make
@@ -59,30 +59,90 @@ include ktane/src/CMakeFiles/ktane.dir/flags.make
 
 ktane/src/CMakeFiles/ktane.dir/main.cpp.o: ktane/src/CMakeFiles/ktane.dir/flags.make
 ktane/src/CMakeFiles/ktane.dir/main.cpp.o: ../ktane/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ktane/src/CMakeFiles/ktane.dir/main.cpp.o"
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/main.cpp.o -c /home/dewitt/Documents/Perso/ktane2/ktane/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ktane/src/CMakeFiles/ktane.dir/main.cpp.o"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/main.cpp.o -c /home/dewitt/Documents/Perso/ktane_2/ktane/src/main.cpp
 
 ktane/src/CMakeFiles/ktane.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ktane.dir/main.cpp.i"
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane2/ktane/src/main.cpp > CMakeFiles/ktane.dir/main.cpp.i
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane_2/ktane/src/main.cpp > CMakeFiles/ktane.dir/main.cpp.i
 
 ktane/src/CMakeFiles/ktane.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ktane.dir/main.cpp.s"
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane2/ktane/src/main.cpp -o CMakeFiles/ktane.dir/main.cpp.s
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane_2/ktane/src/main.cpp -o CMakeFiles/ktane.dir/main.cpp.s
+
+ktane/src/CMakeFiles/ktane.dir/Wire.cpp.o: ktane/src/CMakeFiles/ktane.dir/flags.make
+ktane/src/CMakeFiles/ktane.dir/Wire.cpp.o: ../ktane/src/Wire.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ktane/src/CMakeFiles/ktane.dir/Wire.cpp.o"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/Wire.cpp.o -c /home/dewitt/Documents/Perso/ktane_2/ktane/src/Wire.cpp
+
+ktane/src/CMakeFiles/ktane.dir/Wire.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ktane.dir/Wire.cpp.i"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane_2/ktane/src/Wire.cpp > CMakeFiles/ktane.dir/Wire.cpp.i
+
+ktane/src/CMakeFiles/ktane.dir/Wire.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ktane.dir/Wire.cpp.s"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane_2/ktane/src/Wire.cpp -o CMakeFiles/ktane.dir/Wire.cpp.s
+
+ktane/src/CMakeFiles/ktane.dir/Button.cpp.o: ktane/src/CMakeFiles/ktane.dir/flags.make
+ktane/src/CMakeFiles/ktane.dir/Button.cpp.o: ../ktane/src/Button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ktane/src/CMakeFiles/ktane.dir/Button.cpp.o"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/Button.cpp.o -c /home/dewitt/Documents/Perso/ktane_2/ktane/src/Button.cpp
+
+ktane/src/CMakeFiles/ktane.dir/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ktane.dir/Button.cpp.i"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane_2/ktane/src/Button.cpp > CMakeFiles/ktane.dir/Button.cpp.i
+
+ktane/src/CMakeFiles/ktane.dir/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ktane.dir/Button.cpp.s"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane_2/ktane/src/Button.cpp -o CMakeFiles/ktane.dir/Button.cpp.s
+
+ktane/src/CMakeFiles/ktane.dir/modules.cpp.o: ktane/src/CMakeFiles/ktane.dir/flags.make
+ktane/src/CMakeFiles/ktane.dir/modules.cpp.o: ../ktane/src/modules.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ktane/src/CMakeFiles/ktane.dir/modules.cpp.o"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/modules.cpp.o -c /home/dewitt/Documents/Perso/ktane_2/ktane/src/modules.cpp
+
+ktane/src/CMakeFiles/ktane.dir/modules.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ktane.dir/modules.cpp.i"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane_2/ktane/src/modules.cpp > CMakeFiles/ktane.dir/modules.cpp.i
+
+ktane/src/CMakeFiles/ktane.dir/modules.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ktane.dir/modules.cpp.s"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane_2/ktane/src/modules.cpp -o CMakeFiles/ktane.dir/modules.cpp.s
+
+ktane/src/CMakeFiles/ktane.dir/needy.cpp.o: ktane/src/CMakeFiles/ktane.dir/flags.make
+ktane/src/CMakeFiles/ktane.dir/needy.cpp.o: ../ktane/src/needy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ktane/src/CMakeFiles/ktane.dir/needy.cpp.o"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ktane.dir/needy.cpp.o -c /home/dewitt/Documents/Perso/ktane_2/ktane/src/needy.cpp
+
+ktane/src/CMakeFiles/ktane.dir/needy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ktane.dir/needy.cpp.i"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dewitt/Documents/Perso/ktane_2/ktane/src/needy.cpp > CMakeFiles/ktane.dir/needy.cpp.i
+
+ktane/src/CMakeFiles/ktane.dir/needy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ktane.dir/needy.cpp.s"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dewitt/Documents/Perso/ktane_2/ktane/src/needy.cpp -o CMakeFiles/ktane.dir/needy.cpp.s
 
 # Object files for target ktane
 ktane_OBJECTS = \
-"CMakeFiles/ktane.dir/main.cpp.o"
+"CMakeFiles/ktane.dir/main.cpp.o" \
+"CMakeFiles/ktane.dir/Wire.cpp.o" \
+"CMakeFiles/ktane.dir/Button.cpp.o" \
+"CMakeFiles/ktane.dir/modules.cpp.o" \
+"CMakeFiles/ktane.dir/needy.cpp.o"
 
 # External object files for target ktane
 ktane_EXTERNAL_OBJECTS =
 
 ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/main.cpp.o
+ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/Wire.cpp.o
+ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/Button.cpp.o
+ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/modules.cpp.o
+ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/needy.cpp.o
 ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/build.make
 ktane/src/ktane: ktanelib/src/libktanelib.a
 ktane/src/ktane: ktane/src/CMakeFiles/ktane.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dewitt/Documents/Perso/ktane2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ktane"
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ktane.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ktane"
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ktane.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ktane/src/CMakeFiles/ktane.dir/build: ktane/src/ktane
@@ -90,10 +150,10 @@ ktane/src/CMakeFiles/ktane.dir/build: ktane/src/ktane
 .PHONY : ktane/src/CMakeFiles/ktane.dir/build
 
 ktane/src/CMakeFiles/ktane.dir/clean:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src && $(CMAKE_COMMAND) -P CMakeFiles/ktane.dir/cmake_clean.cmake
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src && $(CMAKE_COMMAND) -P CMakeFiles/ktane.dir/cmake_clean.cmake
 .PHONY : ktane/src/CMakeFiles/ktane.dir/clean
 
 ktane/src/CMakeFiles/ktane.dir/depend:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dewitt/Documents/Perso/ktane2 /home/dewitt/Documents/Perso/ktane2/ktane/src /home/dewitt/Documents/Perso/ktane2/cmake-build-debug /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src/CMakeFiles/ktane.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dewitt/Documents/Perso/ktane_2 /home/dewitt/Documents/Perso/ktane_2/ktane/src /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/CMakeFiles/ktane.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ktane/src/CMakeFiles/ktane.dir/depend
 

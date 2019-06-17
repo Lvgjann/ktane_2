@@ -314,6 +314,12 @@ void module_1()
 
     cout << "How many wires ? [3-6]" << endl;
     cin >> wires;
+    while (cin.fail()) {
+        clear();
+        cout << "Error. You must enter a number." << endl;
+        cout << "How many wires [3-6]" << endl;
+        cin >> wires;
+    }
 
     switch(wires)
     {
@@ -559,26 +565,38 @@ void module_8()
 void module_9()
 {
     display_instructions_module9();
+    string black[] = {"A, B or C", "A or C", "B", "A or C", "B", "B or C", "A or B", "C", "C"};
+    string blue[] = {"B", "A or C", "B", "A", "B", "B or C", "C", "A or C", "A"};
+    string red[] = {"C", "B", "A", "A or C", "B", "A or C", "A, B or C", "A or B", "B"};
 
-    int count = 0;
-    int count_red = 0;
-    int count_blue = 0;
-    int count_black = 0;
+    int red_it = 0;
+    int blue_it = 0;
+    int black_it = 0;
 
-    string connection;
     string color;
 
     bool quit = false;
 
     while(!quit)
     {
-        cout << "Enter the wire color : " << endl;
-        if (count == 0)
-            cout << " Red : r, Blue : b, Black : n" << endl;
+        cout << "Indicate the wire color [black / blue / red]" << endl;
         cin >> color;
-
-        cout << "Enter the connection (A, B, C) : " << endl;
-        cin >> connection;
+        if (color == "exit") {
+            quit = true;
+        } else {
+            if (color == "black") {
+                cout << black[black_it] << endl;
+                black_it++;
+            } else if (color == "blue") {
+                cout << blue[blue_it] << endl;
+                blue_it++;
+            } else if (color == "red") {
+                cout << red[red_it] << endl;
+                red_it++;
+            } else {
+                cout << "Error. Invalid entry." << endl;
+            }
+        }
     }
 }
 

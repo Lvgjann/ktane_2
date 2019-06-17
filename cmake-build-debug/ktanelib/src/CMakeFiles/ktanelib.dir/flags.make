@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dewitt/Documents/Perso/ktane2/ktanelib/inc 
+CXX_INCLUDES = -I/home/dewitt/Documents/Perso/ktane_2/ktanelib/inc 
 

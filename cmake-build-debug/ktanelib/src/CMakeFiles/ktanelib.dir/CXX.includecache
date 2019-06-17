@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/test.cpp
+test.h
+/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/test.h
+
+/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/test.h
+

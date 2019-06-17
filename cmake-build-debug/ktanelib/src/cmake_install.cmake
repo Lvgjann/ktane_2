@@ -1,4 +1,4 @@
-# Install script for directory: /home/dewitt/Documents/Perso/ktane2/ktanelib/src
+# Install script for directory: /home/dewitt/Documents/Perso/ktane_2/ktanelib/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

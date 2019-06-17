@@ -1,4 +1,4 @@
-# Install script for directory: /home/dewitt/Documents/Perso/ktane2/ktane
+# Install script for directory: /home/dewitt/Documents/Perso/ktane_2/ktane
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src/cmake_install.cmake")
+  include("/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/cmake_install.cmake")
 
 endif()
 

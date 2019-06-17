@@ -6,8 +6,7 @@
 
 #include "Button.h"
 
-Button::Button() {
-}
+Button::Button() = default;
 
 void Button::held_button()
 {

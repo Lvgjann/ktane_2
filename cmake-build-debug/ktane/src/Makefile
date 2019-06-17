@@ -48,10 +48,10 @@ RM = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dewitt/Documents/Perso/ktane2
+CMAKE_SOURCE_DIR = /home/dewitt/Documents/Perso/ktane_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/CMakeFiles /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/ktane/src/CMakeFiles/progress.marks
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane2/cmake-build-debug/CMakeFiles 0
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/CMakeFiles/progress.marks
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/clean
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/preinstall
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/preinstall
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ktane/src/CMakeFiles/ktane.dir/rule:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/CMakeFiles/ktane.dir/rule
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ktane/src/CMakeFiles/ktane.dir/rule
 .PHONY : ktane/src/CMakeFiles/ktane.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,62 @@ ktane: ktane/src/CMakeFiles/ktane.dir/rule
 
 # fast build rule for target.
 ktane/fast:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/build
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/build
 .PHONY : ktane/fast
+
+Button.o: Button.cpp.o
+
+.PHONY : Button.o
+
+# target to build an object file
+Button.cpp.o:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Button.cpp.o
+.PHONY : Button.cpp.o
+
+Button.i: Button.cpp.i
+
+.PHONY : Button.i
+
+# target to preprocess a source file
+Button.cpp.i:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Button.cpp.i
+.PHONY : Button.cpp.i
+
+Button.s: Button.cpp.s
+
+.PHONY : Button.s
+
+# target to generate assembly for a file
+Button.cpp.s:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Button.cpp.s
+.PHONY : Button.cpp.s
+
+Wire.o: Wire.cpp.o
+
+.PHONY : Wire.o
+
+# target to build an object file
+Wire.cpp.o:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Wire.cpp.o
+.PHONY : Wire.cpp.o
+
+Wire.i: Wire.cpp.i
+
+.PHONY : Wire.i
+
+# target to preprocess a source file
+Wire.cpp.i:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Wire.cpp.i
+.PHONY : Wire.cpp.i
+
+Wire.s: Wire.cpp.s
+
+.PHONY : Wire.s
+
+# target to generate assembly for a file
+Wire.cpp.s:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/Wire.cpp.s
+.PHONY : Wire.cpp.s
 
 main.o: main.cpp.o
 
@@ -131,7 +185,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.o
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -140,7 +194,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.i
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,8 +203,62 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.s
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+modules.o: modules.cpp.o
+
+.PHONY : modules.o
+
+# target to build an object file
+modules.cpp.o:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/modules.cpp.o
+.PHONY : modules.cpp.o
+
+modules.i: modules.cpp.i
+
+.PHONY : modules.i
+
+# target to preprocess a source file
+modules.cpp.i:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/modules.cpp.i
+.PHONY : modules.cpp.i
+
+modules.s: modules.cpp.s
+
+.PHONY : modules.s
+
+# target to generate assembly for a file
+modules.cpp.s:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/modules.cpp.s
+.PHONY : modules.cpp.s
+
+needy.o: needy.cpp.o
+
+.PHONY : needy.o
+
+# target to build an object file
+needy.cpp.o:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/needy.cpp.o
+.PHONY : needy.cpp.o
+
+needy.i: needy.cpp.i
+
+.PHONY : needy.i
+
+# target to preprocess a source file
+needy.cpp.i:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/needy.cpp.i
+.PHONY : needy.cpp.i
+
+needy.s: needy.cpp.s
+
+.PHONY : needy.s
+
+# target to generate assembly for a file
+needy.cpp.s:
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/needy.cpp.s
+.PHONY : needy.cpp.s
 
 # Help Target
 help:
@@ -161,9 +269,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ktane"
+	@echo "... Button.o"
+	@echo "... Button.i"
+	@echo "... Button.s"
+	@echo "... Wire.o"
+	@echo "... Wire.i"
+	@echo "... Wire.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... modules.o"
+	@echo "... modules.i"
+	@echo "... modules.s"
+	@echo "... needy.o"
+	@echo "... needy.i"
+	@echo "... needy.s"
 .PHONY : help
 
 
@@ -175,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dewitt/Documents/Perso/ktane2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

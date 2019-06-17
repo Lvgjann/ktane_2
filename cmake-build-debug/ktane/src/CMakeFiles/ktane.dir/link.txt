@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ktane.dir/main.cpp.o  -o ktane  -L/ktanelib/src -Wl,-rpath,/ktanelib/src ../../ktanelib/src/libktanelib.a 
+/usr/bin/c++   -std=c++1y -Wall -std=c++1y -Wall -g   CMakeFiles/ktane.dir/main.cpp.o CMakeFiles/ktane.dir/Wire.cpp.o CMakeFiles/ktane.dir/Button.cpp.o CMakeFiles/ktane.dir/modules.cpp.o CMakeFiles/ktane.dir/needy.cpp.o  -o ktane  -L/ktanelib/src -Wl,-rpath,/ktanelib/src ../../ktanelib/src/libktanelib.a 
