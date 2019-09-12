@@ -5,23 +5,13 @@
 		<Option title="ktane2"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\ktane\;CMake Files\ktane\src\;CMake Files\ktanelib\;CMake Files\ktanelib\src\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,15 +27,26 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ktane">
-				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/ktane" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src"/>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binary">
+				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/binary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktane/inc"/>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktanelib/inc"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./include"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./src"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./libs"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -56,21 +57,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 ktane"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ktane/fast">
-				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/ktane" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src"/>
+			<Target title="binary/fast">
+				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/binary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktane/inc"/>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktanelib/inc"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./include"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./src"/>
+					<Add directory="/home/dewitt/Documents/Perso/ktane_2/./libs"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -81,108 +83,54 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 ktane/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktane/src/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ktanelib">
-				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/libktanelib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktanelib/inc"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 ktanelib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ktanelib/fast">
-				<Option output="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/libktanelib.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/dewitt/Documents/Perso/ktane_2/ktanelib/inc"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 ktanelib/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/ktanelib/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/inc/modules.h">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Bomb.cpp">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/Button.cpp">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Bomb.h">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/Button.h">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Button.cpp">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/Wire.cpp">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Button.h">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/Wire.h">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Module.cpp">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/main.cpp">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Module.h">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/modules.cpp">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_application.cpp">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/needy.cpp">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_application.h">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/needy.h">
-			<Option target="ktane"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_instructions.cpp">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/test.cpp">
-			<Option target="ktanelib"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_instructions.h">
+			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/test.h">
-			<Option target="ktanelib"/>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_modules.cpp">
+			<Option target="binary"/>
+		</Unit>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_modules.h">
+			<Option target="binary"/>
+		</Unit>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/main.cpp">
+			<Option target="binary"/>
 		</Unit>
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ktane\"/>
-		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktane/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ktane\src\"/>
-		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktanelib/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ktanelib\"/>
-		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/ktanelib/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\ktanelib\src\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

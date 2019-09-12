@@ -1,9 +1,8 @@
-#include "_Appli.h"
+//
+// Created by dewitt on 12/09/19.
+//
 
-#include <stdio.h>
-#include <cstring>
-#include "modules.h"
-#include "needy.h"
+#include "_instructions.h"
 
 //Module 1 : Wires
 void display_instructions_module1() {
@@ -150,130 +149,6 @@ void display_modules() {
          << "11 : Password" << endl
          << "12 : [NEEDY] Knobs" << endl
          << endl
+         << "13 : Describe the bomb" << endl
          << "0 : Quit" << endl;
 }
-
-int appli() {
-    clear();
-    int module;
-
-    bool quit = false;
-
-    while (!quit) {
-        cout << "Choose a module :" << endl;
-        display_modules();
-
-        cin >> module;
-        switch (module) {
-            case 0:
-                quit = true;
-                break;
-            case 1:
-                module_1();
-                break;
-            case 2:
-                module_2();
-                break;
-            case 3:
-                module_3();
-                break;
-            case 4:
-                module_4();
-                break;
-            case 5:
-                module_5();
-                break;
-            case 6:
-                module_6();
-                break;
-            case 7:
-                module_7();
-                break;
-            case 8:
-                module_8();
-                break;
-            case 9:
-                module_9();
-                break;
-            case 10:
-                module_10();
-                break;
-            case 11:
-                module_11();
-                break;
-            case 12:
-                needy_3();
-                break;
-            default:
-                cout << "Module not found." << endl;
-                break;
-        }
-    }
-    return 0;
-}
-
-
-void clear() {
-    cout << "\033[02J\033[1;1H";
-}
-
-void menu() {
-    cout << "Press any key to continue." << endl;
-    cin.ignore();
-    cin.get();
-}
-
-void display_vector(vector<string> tab) {
-    cout << "/==============================/" << endl;
-    for (const auto &i : tab)
-        cout << i << " " << endl;
-    cout << endl;
-}
-
-bool find_word(vector<string> tab, string word) {
-    bool found = false;
-    for (const auto &i : tab) {
-        if (i == word)
-            found = true;
-    }
-    return found;
-}
-
-void find_dictionnary(vector<vector<string> > tab, string dic) {
-    bool found = false;
-    unsigned int i = 0;
-    while (!found && i < tab.size()) {
-        if (tab[i][0] == dic) {
-            found = true;
-            display_vector(tab[i]);
-        }
-    }
-}
-
-void split(string s, int l, vector<string> &entries) {
-    const char *c = s.c_str();
-    char buffer[l];
-    entries.reserve(0);
-
-    int d = 0;
-    for (unsigned int i = 0; i < s.length() - 1;) {
-        if (d != l) {
-            buffer[d] = c[i];
-            d++;
-            i++;
-        } else {
-            entries.push_back(buffer, l);
-
-            //Clear array
-            memset(buffer, 0, l);
-            d = 0;
-        }
-    }
-}
-
-else
-i++;
-}
-}
-
-

@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,206 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ktane
+# Target rules for targets named binary
 
 # Build rule for target.
-ktane: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ktane
-.PHONY : ktane
+binary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binary
+.PHONY : binary
 
 # fast build rule for target.
-ktane/fast:
-	$(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/build
-.PHONY : ktane/fast
+binary/fast:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/build
+.PHONY : binary/fast
 
-#=============================================================================
-# Target rules for targets named ktanelib
+src/Bomb.o: src/Bomb.cpp.o
 
-# Build rule for target.
-ktanelib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ktanelib
-.PHONY : ktanelib
+.PHONY : src/Bomb.o
 
-# fast build rule for target.
-ktanelib/fast:
-	$(MAKE) -f ktanelib/src/CMakeFiles/ktanelib.dir/build.make ktanelib/src/CMakeFiles/ktanelib.dir/build
-.PHONY : ktanelib/fast
+# target to build an object file
+src/Bomb.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Bomb.cpp.o
+.PHONY : src/Bomb.cpp.o
+
+src/Bomb.i: src/Bomb.cpp.i
+
+.PHONY : src/Bomb.i
+
+# target to preprocess a source file
+src/Bomb.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Bomb.cpp.i
+.PHONY : src/Bomb.cpp.i
+
+src/Bomb.s: src/Bomb.cpp.s
+
+.PHONY : src/Bomb.s
+
+# target to generate assembly for a file
+src/Bomb.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Bomb.cpp.s
+.PHONY : src/Bomb.cpp.s
+
+src/Button.o: src/Button.cpp.o
+
+.PHONY : src/Button.o
+
+# target to build an object file
+src/Button.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Button.cpp.o
+.PHONY : src/Button.cpp.o
+
+src/Button.i: src/Button.cpp.i
+
+.PHONY : src/Button.i
+
+# target to preprocess a source file
+src/Button.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Button.cpp.i
+.PHONY : src/Button.cpp.i
+
+src/Button.s: src/Button.cpp.s
+
+.PHONY : src/Button.s
+
+# target to generate assembly for a file
+src/Button.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Button.cpp.s
+.PHONY : src/Button.cpp.s
+
+src/Module.o: src/Module.cpp.o
+
+.PHONY : src/Module.o
+
+# target to build an object file
+src/Module.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Module.cpp.o
+.PHONY : src/Module.cpp.o
+
+src/Module.i: src/Module.cpp.i
+
+.PHONY : src/Module.i
+
+# target to preprocess a source file
+src/Module.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Module.cpp.i
+.PHONY : src/Module.cpp.i
+
+src/Module.s: src/Module.cpp.s
+
+.PHONY : src/Module.s
+
+# target to generate assembly for a file
+src/Module.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/Module.cpp.s
+.PHONY : src/Module.cpp.s
+
+src/_application.o: src/_application.cpp.o
+
+.PHONY : src/_application.o
+
+# target to build an object file
+src/_application.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_application.cpp.o
+.PHONY : src/_application.cpp.o
+
+src/_application.i: src/_application.cpp.i
+
+.PHONY : src/_application.i
+
+# target to preprocess a source file
+src/_application.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_application.cpp.i
+.PHONY : src/_application.cpp.i
+
+src/_application.s: src/_application.cpp.s
+
+.PHONY : src/_application.s
+
+# target to generate assembly for a file
+src/_application.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_application.cpp.s
+.PHONY : src/_application.cpp.s
+
+src/_instructions.o: src/_instructions.cpp.o
+
+.PHONY : src/_instructions.o
+
+# target to build an object file
+src/_instructions.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_instructions.cpp.o
+.PHONY : src/_instructions.cpp.o
+
+src/_instructions.i: src/_instructions.cpp.i
+
+.PHONY : src/_instructions.i
+
+# target to preprocess a source file
+src/_instructions.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_instructions.cpp.i
+.PHONY : src/_instructions.cpp.i
+
+src/_instructions.s: src/_instructions.cpp.s
+
+.PHONY : src/_instructions.s
+
+# target to generate assembly for a file
+src/_instructions.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_instructions.cpp.s
+.PHONY : src/_instructions.cpp.s
+
+src/_modules.o: src/_modules.cpp.o
+
+.PHONY : src/_modules.o
+
+# target to build an object file
+src/_modules.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_modules.cpp.o
+.PHONY : src/_modules.cpp.o
+
+src/_modules.i: src/_modules.cpp.i
+
+.PHONY : src/_modules.i
+
+# target to preprocess a source file
+src/_modules.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_modules.cpp.i
+.PHONY : src/_modules.cpp.i
+
+src/_modules.s: src/_modules.cpp.s
+
+.PHONY : src/_modules.s
+
+# target to generate assembly for a file
+src/_modules.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/_modules.cpp.s
+.PHONY : src/_modules.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -142,10 +318,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ktane"
-	@echo "... ktanelib"
+	@echo "... rebuild_cache"
+	@echo "... binary"
+	@echo "... src/Bomb.o"
+	@echo "... src/Bomb.i"
+	@echo "... src/Bomb.s"
+	@echo "... src/Button.o"
+	@echo "... src/Button.i"
+	@echo "... src/Button.s"
+	@echo "... src/Module.o"
+	@echo "... src/Module.i"
+	@echo "... src/Module.s"
+	@echo "... src/_application.o"
+	@echo "... src/_application.i"
+	@echo "... src/_application.s"
+	@echo "... src/_instructions.o"
+	@echo "... src/_instructions.i"
+	@echo "... src/_instructions.s"
+	@echo "... src/_modules.o"
+	@echo "... src/_modules.i"
+	@echo "... src/_modules.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

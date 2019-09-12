@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.12.1)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -Wall")
+
+include_directories(../inc)
+include_directories(${PROJECT_SOURCE_DIR}/libs/inc)
+link_directories(${MyProject_SOURCE_DIR}/ktanelib/src)
+add_executable(ktane  main.cpp Wire.cpp Wire.h modules.cpp)
+target_link_libraries(ktane libs)
+set(SRC _Appli.h _Appli.cpp)
+set(SRC "*.cpp")
+set(HEADERS "*.h")

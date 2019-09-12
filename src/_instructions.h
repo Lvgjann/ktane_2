@@ -1,5 +1,11 @@
-#ifndef APPLI
-#define APPLI
+//
+// Created by dewitt on 12/09/19.
+//
+
+#ifndef KTANE2_INSTRUCTIONS_H
+#define KTANE2_INSTRUCTIONS_H
+
+#include "../inc/_Appli.h"
 
 #include <array>
 #include <cstdlib>
@@ -12,11 +18,6 @@
 #include <vector>
 
 using namespace std;
-
-struct Color {
-    std::string color;
-};
-
 
 void display_instructions_module1();
 void display_instructions_module2_0();
@@ -34,17 +35,6 @@ void display_instructions_needy1();
 void display_instructions_needy2();
 void display_instructions_needy3();
 
-void clear();
-void menu();
-
-void display_vector(vector<string> tab);
-
-bool find_word(vector<string> tab, string word);
-
-void find_dictionnary(vector<vector<string> > tab, string dic);
-
 void display_modules();
-int appli();
 
-#endif // APPLI
-
+#endif //KTANE2_INSTRUCTIONS_H

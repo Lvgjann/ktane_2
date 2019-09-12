@@ -11,10 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.1/CMakeSystem.cmake"
-  "../ktane/CMakeLists.txt"
-  "../ktane/src/CMakeLists.txt"
-  "../ktanelib/CMakeLists.txt"
-  "../ktanelib/src/CMakeLists.txt"
   "/opt/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCInformation.cmake"
   "/opt/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXInformation.cmake"
   "/opt/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake"
@@ -46,14 +42,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ktane/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ktanelib/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ktane/src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ktanelib/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "ktane/src/CMakeFiles/ktane.dir/DependInfo.cmake"
-  "ktanelib/src/CMakeFiles/ktanelib.dir/DependInfo.cmake"
+  "CMakeFiles/binary.dir/DependInfo.cmake"
   )

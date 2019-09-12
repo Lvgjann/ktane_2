@@ -65,148 +65,39 @@ CMAKE_SOURCE_DIR = /home/dewitt/Documents/Perso/ktane_2
 CMAKE_BINARY_DIR = /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug
 
 #=============================================================================
-# Directory level rules for directory ktane
-
-# Convenience name for "all" pass in the directory.
-ktane/all: ktane/src/all
-
-.PHONY : ktane/all
-
-# Convenience name for "clean" pass in the directory.
-ktane/clean: ktane/src/clean
-
-.PHONY : ktane/clean
-
-# Convenience name for "preinstall" pass in the directory.
-ktane/preinstall: ktane/src/preinstall
-
-.PHONY : ktane/preinstall
-
-#=============================================================================
-# Directory level rules for directory ktanelib
-
-# Convenience name for "all" pass in the directory.
-ktanelib/all: ktanelib/src/all
-
-.PHONY : ktanelib/all
-
-# Convenience name for "clean" pass in the directory.
-ktanelib/clean: ktanelib/src/clean
-
-.PHONY : ktanelib/clean
-
-# Convenience name for "preinstall" pass in the directory.
-ktanelib/preinstall: ktanelib/src/preinstall
-
-.PHONY : ktanelib/preinstall
-
-#=============================================================================
-# Directory level rules for directory ktane/src
-
-# Convenience name for "all" pass in the directory.
-ktane/src/all: ktane/src/CMakeFiles/ktane.dir/all
-
-.PHONY : ktane/src/all
-
-# Convenience name for "clean" pass in the directory.
-ktane/src/clean: ktane/src/CMakeFiles/ktane.dir/clean
-
-.PHONY : ktane/src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-ktane/src/preinstall:
-
-.PHONY : ktane/src/preinstall
-
-#=============================================================================
-# Target rules for target ktane/src/CMakeFiles/ktane.dir
+# Target rules for target CMakeFiles/binary.dir
 
 # All Build rule for target.
-ktane/src/CMakeFiles/ktane.dir/all: ktanelib/src/CMakeFiles/ktanelib.dir/all
-	$(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/depend
-	$(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ktane"
-.PHONY : ktane/src/CMakeFiles/ktane.dir/all
+CMakeFiles/binary.dir/all:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/depend
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target binary"
+.PHONY : CMakeFiles/binary.dir/all
 
 # Include target in all.
-all: ktane/src/CMakeFiles/ktane.dir/all
+all: CMakeFiles/binary.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ktane/src/CMakeFiles/ktane.dir/rule: cmake_check_build_system
+CMakeFiles/binary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 ktane/src/CMakeFiles/ktane.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/binary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles 0
-.PHONY : ktane/src/CMakeFiles/ktane.dir/rule
+.PHONY : CMakeFiles/binary.dir/rule
 
 # Convenience name for target.
-ktane: ktane/src/CMakeFiles/ktane.dir/rule
+binary: CMakeFiles/binary.dir/rule
 
-.PHONY : ktane
-
-# clean rule for target.
-ktane/src/CMakeFiles/ktane.dir/clean:
-	$(MAKE) -f ktane/src/CMakeFiles/ktane.dir/build.make ktane/src/CMakeFiles/ktane.dir/clean
-.PHONY : ktane/src/CMakeFiles/ktane.dir/clean
+.PHONY : binary
 
 # clean rule for target.
-clean: ktane/src/CMakeFiles/ktane.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory ktanelib/src
-
-# Convenience name for "all" pass in the directory.
-ktanelib/src/all: ktanelib/src/CMakeFiles/ktanelib.dir/all
-
-.PHONY : ktanelib/src/all
-
-# Convenience name for "clean" pass in the directory.
-ktanelib/src/clean: ktanelib/src/CMakeFiles/ktanelib.dir/clean
-
-.PHONY : ktanelib/src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-ktanelib/src/preinstall:
-
-.PHONY : ktanelib/src/preinstall
-
-#=============================================================================
-# Target rules for target ktanelib/src/CMakeFiles/ktanelib.dir
-
-# All Build rule for target.
-ktanelib/src/CMakeFiles/ktanelib.dir/all:
-	$(MAKE) -f ktanelib/src/CMakeFiles/ktanelib.dir/build.make ktanelib/src/CMakeFiles/ktanelib.dir/depend
-	$(MAKE) -f ktanelib/src/CMakeFiles/ktanelib.dir/build.make ktanelib/src/CMakeFiles/ktanelib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ktanelib"
-.PHONY : ktanelib/src/CMakeFiles/ktanelib.dir/all
-
-# Include target in all.
-all: ktanelib/src/CMakeFiles/ktanelib.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-ktanelib/src/CMakeFiles/ktanelib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 ktanelib/src/CMakeFiles/ktanelib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dewitt/Documents/Perso/ktane_2/cmake-build-debug/CMakeFiles 0
-.PHONY : ktanelib/src/CMakeFiles/ktanelib.dir/rule
-
-# Convenience name for target.
-ktanelib: ktanelib/src/CMakeFiles/ktanelib.dir/rule
-
-.PHONY : ktanelib
+CMakeFiles/binary.dir/clean:
+	$(MAKE) -f CMakeFiles/binary.dir/build.make CMakeFiles/binary.dir/clean
+.PHONY : CMakeFiles/binary.dir/clean
 
 # clean rule for target.
-ktanelib/src/CMakeFiles/ktanelib.dir/clean:
-	$(MAKE) -f ktanelib/src/CMakeFiles/ktanelib.dir/build.make ktanelib/src/CMakeFiles/ktanelib.dir/clean
-.PHONY : ktanelib/src/CMakeFiles/ktanelib.dir/clean
-
-# clean rule for target.
-clean: ktanelib/src/CMakeFiles/ktanelib.dir/clean
+clean: CMakeFiles/binary.dir/clean
 
 .PHONY : clean
 
