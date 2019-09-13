@@ -8,6 +8,7 @@
 #include <array>
 #include <cstdlib>
 #include <cstring>
+#include <exception>
 #include <iostream>
 #include <map>
 #include <sstream>
@@ -30,5 +31,6 @@ void menu();
 void display_vector(vector<string> tab);
 bool find_word(vector<string> tab, string word);
 void find_dictionnary(vector<vector<string> > tab, string dic);
+vector<string> split(string str);
 
 #endif //KTANE2_APPLICATION_H

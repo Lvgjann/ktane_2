@@ -90,6 +90,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/inc/_application.h">
+			<Option target="binary"/>
+		</Unit>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/inc/_instructions.h">
+			<Option target="binary"/>
+		</Unit>
+		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/inc/_modules.h">
+			<Option target="binary"/>
+		</Unit>
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/Bomb.cpp">
 			<Option target="binary"/>
 		</Unit>
@@ -111,19 +120,10 @@
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_application.cpp">
 			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_application.h">
-			<Option target="binary"/>
-		</Unit>
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_instructions.cpp">
 			<Option target="binary"/>
 		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_instructions.h">
-			<Option target="binary"/>
-		</Unit>
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_modules.cpp">
-			<Option target="binary"/>
-		</Unit>
-		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/_modules.h">
 			<Option target="binary"/>
 		</Unit>
 		<Unit filename="/home/dewitt/Documents/Perso/ktane_2/src/main.cpp">

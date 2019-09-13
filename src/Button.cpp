@@ -47,13 +47,16 @@ bool Button::solve_button(Bomb bomb) {
         std::cout << "Press and immediately release the button." << std::endl;
         return true;
     }
+    // Condition to hold the button
     else if ((m_instruction == "abort" && m_color == blue)
              || (m_color == white && bomb.contains_lit_label("car"))
              || (m_color == yellow)) {
+        display_instructions_module2_1();
         std::cout << "Hold the button." << std::endl;
         return solve_held_button();
     }
     else {
+        display_instructions_module2_1();
         std::cout << "Hold the button." << std::endl;
         return solve_held_button();
     }

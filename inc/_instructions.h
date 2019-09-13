@@ -5,7 +5,6 @@
 #ifndef KTANE2_INSTRUCTIONS_H
 #define KTANE2_INSTRUCTIONS_H
 
-#include "../inc/_Appli.h"
 
 #include <array>
 #include <cstdlib>

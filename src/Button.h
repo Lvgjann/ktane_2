@@ -5,8 +5,8 @@
 #ifndef KTANE2_BUTTON_H
 #define KTANE2_BUTTON_H
 
-#include "_application.h"
-#include "_instructions.h"
+#include "../inc/_application.h"
+#include "../inc/_instructions.h"
 #include "Bomb.h"
 #include "Module.h"
 

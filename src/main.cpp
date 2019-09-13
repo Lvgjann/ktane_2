@@ -1,5 +1,5 @@
-#include "_instructions.h"
-#include "_modules.h"
+#include "../inc/_instructions.h"
+#include "../inc/_modules.h"
 #include "Bomb.h"
 #include "Button.h"
 

@@ -2,7 +2,7 @@
 // Created by dewitt on 12/09/19.
 //
 
-#include "_instructions.h"
+#include "../inc/_instructions.h"
 
 //Module 1 : Wires
 void display_instructions_module1() {

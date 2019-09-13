@@ -2,7 +2,7 @@
 // Created by dewitt on 12/09/19.
 //
 
-#include "_application.h"
+#include "../inc/_application.h"
 
 Color convert(const std::string str) {
     if (str == "black") return black;
