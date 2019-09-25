@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-.././inc/_application.h
+../inc/_application.h
 array
 -
 cstdlib
 -
 cstring
 -
+exception
+-
 iostream
 -
 map
@@ -28,7 +30,7 @@ string
 vector
 -
 
-.././inc/_instructions.h
+../inc/_instructions.h
 array
 -
 cstdlib
@@ -48,7 +50,7 @@ string
 vector
 -
 
-.././src/Bomb.h
+../src/Bomb.h
 iostream
 -
 map
@@ -58,17 +60,17 @@ string
 vector
 -
 
-.././src/Button.h
+../src/Button.h
 ../inc/_application.h
-.././inc/_application.h
+../inc/_application.h
 ../inc/_instructions.h
-.././inc/_instructions.h
+../inc/_instructions.h
 Bomb.h
-.././src/Bomb.h
+../src/Bomb.h
 Module.h
-.././src/Module.h
+../src/Module.h
 
-.././src/Module.h
+../src/Module.h
 string
 -
 
@@ -78,6 +80,8 @@ array
 cstdlib
 -
 cstring
+-
+exception
 -
 iostream
 -
@@ -130,10 +134,6 @@ string
 vector
 -
 
-/home/dewitt/Documents/Perso/ktane_2/src/Button.cpp
-Button.h
-/home/dewitt/Documents/Perso/ktane_2/src/Button.h
-
 /home/dewitt/Documents/Perso/ktane_2/src/Button.h
 ../inc/_application.h
 /home/dewitt/Documents/Perso/ktane_2/inc/_application.h
@@ -147,10 +147,6 @@ Module.h
 /home/dewitt/Documents/Perso/ktane_2/src/Module.h
 string
 -
-
-/home/dewitt/Documents/Perso/ktane_2/src/_instructions.cpp
-../inc/_instructions.h
-/home/dewitt/Documents/Perso/ktane_2/inc/_instructions.h
 
 /home/dewitt/Documents/Perso/ktane_2/src/_modules.cpp
 ../inc/_modules.h

@@ -83,8 +83,3 @@ void Bomb::set_serial() {
     std::cin >> str;
     m_serial = str;
 }
-
-Bomb::Bomb() = default;
-
-
-

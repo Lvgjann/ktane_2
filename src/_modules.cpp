@@ -180,7 +180,7 @@ void simon_non_vowel(int strike) {
     }
 }
 
-int count_wires(std::vector<std::string> wires, std::string color) {
+int count_wires(const std::vector<std::string>& wires, const std::string& color) {
     int count = 0;
     for (const auto &wire : wires) {
         if (wire == color)
@@ -189,7 +189,7 @@ int count_wires(std::vector<std::string> wires, std::string color) {
     return count;
 }
 
-void solve_wires(const std::string str, Bomb bomb) {
+void solve_wires(const std::string& str, Bomb bomb) {
     std::vector<std::string> wires = split(str);
     std::vector<std::string> serial = split(bomb.get_serial());
     switch (stoi(wires[0])) {
@@ -227,8 +227,8 @@ void solve_wires(const std::string str, Bomb bomb) {
         case 6:
             if (count_wires(wires, "y") == 0 && stoi(serial[serial.size()]) % 2 != 0)
                 std::cout << "Cut the third wire." << std::endl;
-            else if (count_wires(wires, "y") == 1 && count_wires(wires, "w") > 1)
-                std::cout << "Cut the fourth wire." << std::endl;
+            //else if (count_wires(wires, "y") == 1 && count_wires(wires, "w") > 1)
+            //    std::cout << "Cut the fourth wire." << std::endl;
             else if (count_wires(wires, "r") == 0)
                 std::cout << "Cut the last wire." << std::endl;
             else
@@ -311,7 +311,7 @@ void wof_step_1() {
 }
 
 // Module 1 : Wires
-void module_1(Bomb bomb) {
+void module_1(const Bomb& bomb) {
     clear();
     display_instructions_module1();
 
@@ -324,7 +324,7 @@ void module_1(Bomb bomb) {
 }
 
 // Module 2 : Button
-void module_2(Bomb bomb) {
+void module_2(const Bomb& bomb) {
     clear();
     display_instructions_module2_0();
 
@@ -461,7 +461,7 @@ void module_8(Bomb bomb) {
     int count_wire;
     int i = 0;
     std::string entry;
-    std::vector<std::string> serial = ;
+    std::string serial = bomb.get_serial();
     std::vector<bool> ports = bomb.get_port();
 
     clear();
@@ -474,7 +474,7 @@ void module_8(Bomb bomb) {
                   << R"(("red", "blue", "star, "led"))" << endl;
         cin >> entry;
         if (find_word(c, entry) ||
-            (find_word(s, entry) && stoi(serial[serial.size()]) % 2 == 0) ||
+            (find_word(s, entry) && (int)(serial.back()) % 2 == 0) ||
             (find_word(p, entry) && ports[1]) ||
             (find_word(b, entry) && bomb.get_battery() >= 2))
             cut = true;
@@ -577,13 +577,13 @@ int appli() {
                 module_8(bomb);
                 break;
             case 9:
-                module_9(bomb);
+                module_9();
                 break;
             case 10:
-                module_10(bomb);
+                module_10();
                 break;
             case 11:
-                module_11(bomb);
+                module_11();
                 break;
             case 12:
                 bomb.init_bomb();
