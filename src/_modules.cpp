@@ -310,7 +310,10 @@ void wof_step_1() {
     }
 }
 
-// Module 1 : Wires
+/* Module 1 : Wires
+ *
+ * The user enters the number of wires and their color and the function indicates the wire to cut.
+ */
 void module_1(const Bomb& bomb) {
     clear();
     display_instructions_module1();
@@ -443,14 +446,20 @@ void module_6() {
     menu();
 }
 
-// Module 7 : Morse code
+/* Module 7 : Morse code
+ *
+ * Retranscribe the morse signal, then the function displays the corresponding frequency.
+ */
 //TODO : Morse code
 void module_7() {
     display_instructions_module7();
 }
 
-// Module 8 : Complicated wires
-void module_8(Bomb bomb) {
+/* Module 8 : Complicated wires
+ *
+ * Indicate the different characteristics on the wire, then the function indicates if the wire must be cut.
+ */
+ void module_8(Bomb bomb) {
     std::vector<std::string> c = {"0000", "0010", "1010"};
     std::vector<std::string> d = {"0001", "0110", "1111"};
     std::vector<std::string> s = {"1000", "1100", "1101", "0100"};
@@ -486,7 +495,10 @@ void module_8(Bomb bomb) {
     menu();
 }
 
-// Module 9 WWire Sequences
+/* Module 9 WWire Sequences
+ *
+ * Indicate the wire as one goes along and the function specify if you must cut it or not.
+ */
 void module_9() {
     display_instructions_module9();
     string black[] = {"A, B or C", "A or C", "B", "A or C", "B", "B or C", "A or B", "C", "C"};
@@ -523,14 +535,20 @@ void module_9() {
     }
 }
 
-// Module 10 : Mazes
+/* Module 10 : Mazes
+ *
+ * Indicate the two green circles, the white dot and the red dot, then the function displays the way out.
+ */
 void module_10() {
     clear();
     display_instructions_module10();
     menu();
 }
 
-// Module 11 : Password
+/* Module 11 : Password
+ *
+ * Indicate each letter possible on each position, then the function displays the password.
+ */
 void module_11() {
     clear();
     //TODO Password
